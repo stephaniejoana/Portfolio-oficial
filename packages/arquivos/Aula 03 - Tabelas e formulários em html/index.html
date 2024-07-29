@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda de Animais Exóticos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            color: #555;
+            margin-bottom: 5px;
+        }
+        select, input[type="number"], textarea, input[type="text"], input[type="email"], input[type="tel"], input[type="checkbox"] {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+        input[type="reset"] {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #dc3545;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        input[type="reset"]:hover {
+            background-color: #c82333;
+        }
+        .ibama-seal {
+            max-width: 150px;
+            margin: 0 auto 20px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="ibama-seal" src="img/1000010942-fotor-bg-remover-202406071657.png" alt="Selo do IBAMA">
+        <h2>Venda de Animais Exóticos</h2>
+        <form action="#" method="post">
+            <label for="animal">Selecione o animal:</label>
+            <select id="animal" name="animal">
+            <option value="cobra">Cobra - R$ 5.000,00</option>
+            <option value="iguana">Iguana - R$ 3.000,00</option>
+            <option value="papagaio_azul">Papagaio Azul - R$ 8.000,00</option>
+            <option value="papagaio_vermelho">Papagaio Vermelho - R$ 8.000,00</option>
+            <option value="papagaio_colorido">Papagaio Colorido - R$ 10.000,00</option>
+            <option value="papagaio_cinza">Papagaio Cinza - R$ 7.000,00</option>
+            <option value="papagaio_albino">Papagaio Albino - R$ 15.000,00</option>
+            <option value="urso">Urso - R$ 50.000,00</option>
+            <option value="jacare">Jacaré - R$ 30.000,00</option>
+            <option value="furao">Furão - R$ 4.000,00</option>
+            <option value="taturana">Taturana - R$ 2.000,00</option>
+            <option value="chinchila">Chinchila - R$ 1.500,00</option>
+            <option value="jiboia">Jiboia - R$ 6.000,00</option>
+            <option value="leao">Leão - R$ 100.000,00</option>
+            <option value="guepardo">Guepardo - R$ 80.000,00</option>
+            <option value="tigre">Tigre - R$ 120.000,00</option>
+            <option value="coruja">Coruja - R$ 6.000,00</option>
+            <option value="raposa">Raposa - R$ 10.000,00</option>
+            <option value="sapo_cururu">Sapo Cururu - R$ 1.000,00</option>
+            <option value="morcego">Morcego - R$ 3.000,00</option>
+            <option value="porco_espinho">Porco-Espinho - R$ 5.000,00</option>
+            <option value="lhama">Lhama - R$ 20.000,00</option>
+            <option value="axolote">Axolote - R$ 2.500,00</option>
+            <option value="tubarao">Tubarão - R$ 150.000,00</option>
+            <option value="enguia_eletrica">Enguia Elétrica - R$ 20.000,00</option>
+                <!-- Opções de animais omitidas por brevidade -->
+            </select>
+
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" min="1" value="1">
+
+            <label for="comentario">Comentários:</label>
+            <textarea id="comentario" name="comentario"></textarea>
+
+            <label for="nome">Seu Nome:</label>
+            <input type="text" id="nome" name="nome">
+
+            <label for="email">Seu Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="telefone">Seu Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" pattern="\([0-9]{2}\) [0-9]{8}">
+
+            <label for="idade">Situação do Animal:</label>
+            <div>
+                <input type="checkbox" id="novo" name="idade" value="novo">
+                <label for="novo">Novo</label>
+                <input type="checkbox" id="velho" name="idade" value="velho">
+                <label for="velho">Velho</label>
+                <input type="checkbox" id="doente" name="idade" value="doente">
+                <label for="doente">Doente</label>
+                <input type="checkbox" id="sem_doenca" name="idade" value="sem_doenca">
+                <label for="sem_doenca">Sem Doença</label>
+                <input type="checkbox" id="deficiente" name="idade" value="deficiente">
+                <label for="deficiente">Deficiente</label>
+                <input type="checkbox" id="sem_deficiencia" name="idade" value="sem_deficiencia">
+                <label for="sem_deficiencia">Sem Deficiência</label>
+                <input type="checkbox" id="super_dotado" name="idade" value="super_dotado">
+                <label for="super_dotado">Super Dotado</label>
+                <input type="checkbox" id="recem_nascido" name="idade" value="recem_nascido">
+                <label for="recem_nascido">Recém Nascido</label>
+            </div>
+
+            <input type="submit" value="Enviar Pedido">
+            <input type="reset" value="Limpar">
+        </form>
+    </div>
+</body>
+</html>
